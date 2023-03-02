@@ -19,7 +19,7 @@
 
 ## registrationform
 
-A Fiori application. sub_branch_1
+A Fiori application. sub_branch_1 and this is Commit to branch from bas.
 
 ### Starting the generated app
 
