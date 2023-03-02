@@ -1,0 +1,60 @@
+<mvc:View controllerName="registrationform.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!--Main Tile-->
+            <Toolbar visible="false" id="toolbar1"><Button id="back1" icon="sap-icon://nav-back" press="onBack1" /></Toolbar>
+            <GenericTile id="manageTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Manage Students" subheader="CRUD" press="Tilepress">
+                <TileContent id="_IDGenTileContent1">
+                    <ImageContent id="_IDGenImageContent1" src="https://campustechnology.com/-/media/EDU/CampusTechnology/2021-images/20210121collegestudents.jpg" />
+                </TileContent>
+            </GenericTile>
+            <!--2 SubTiles -->
+            <GenericTile visible="false" id="addTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Add Student " subheader="" press="onAddStudent">
+                <TileContent id="_IDGenTileContent2" >
+                   <ImageContent id="_IDGenImageContent2" src="https://icon-library.com/images/add-record-icon/add-record-icon-18.jpg" />
+                </TileContent>
+            </GenericTile>
+
+            <GenericTile visible="false" id="viewTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="View Records" subheader="Expenses" press="showStudList">
+                <TileContent id="_IDGenTileContent3" >
+                     <ImageContent id="_IDGenImageContent3" src="https://marxcommunications.com/wp-content/uploads/2022/01/947b75b8c347a23e/media-list.png" />
+                </TileContent>
+            </GenericTile>
+            <Toolbar id="_IDGenToolbar1" visible="false">
+                <Button id="back" icon="sap-icon://sys-back" press="onBack" />
+                <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                <Button id="_IDGenButton1" text="Add Student" press="onAddStudent" type="Attention" />
+            </Toolbar>
+            <Table alternateRowColors="true" backgroundDesign="Transparent" visible="false" mode="SingleSelectMaster" selectionChange="onSelectionChange" items="{TableModel>/}" id="Texport">
+                <columns>
+                    <Column id="_IDGenColumn1" hAlign="Center">
+                        <Text id="_IDGenText1" text="Name" />
+                    </Column>
+                    <Column id="_IDGenColumn2" hAlign="Center">
+                        <Text id="_IDGenText2" text="LastName" />
+                    </Column>
+                    <Column id="_IDGenColumn3" hAlign="Center">
+                        <Text id="_IDGenText3" text="ID" />
+                    </Column>
+
+                    <Column id="_IDGenColumn7" hAlign="Center">
+                        <Text id="_IDGenText7" text="Action" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle">
+                        <cells>
+                            <Text id="_IDGenText4" text="{TableModel>firstname}" />
+                            <Text id="_IDGenText5" text="{TableModel>lastname}" />
+                            <Text id="_IDGenText6" text="{TableModel>studid}" />
+                            <HBox id="hb1">
+                                <Button id="btnEdit" icon="sap-icon://edit" press="onEdit" />
+                                <Button id="btnDelete" icon="sap-icon://delete" press="onDelete" />
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

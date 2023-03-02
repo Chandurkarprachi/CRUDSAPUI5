@@ -1,0 +1,52 @@
+.myBackgroundStyle{
+    height : '300px';
+  background-image: url('https://eskilledrtosoftware.com.au/wp-content/uploads/2022/05/The-Best-Student-Management-System-in-Australia-image.svg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.sapMAsapUiBody,.sapUiSizeCompactppBG {  
+    background:url("https://pngtree.com/freebackground/student-book-advertising-background_970588.html");
+}
+
+.sapMGT {
+    background-color: transparent;
+    box-sizing: border-box;
+    background: transparent;
+    border:1px solid black ;
+    -webkit-box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-border-top-left-radius: 2em;
+    -webkit-border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.sapMGT:hover{
+    background:#edbbfa;
+    text-decoration-color: white;
+}
+.sapMBarPH, .sapMBarContainer{
+    background-color: #5c6dcc;
+    text-decoration-color: white;
+}
+.sapMTitle{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #5c6dcc;  
+}
+#container-registrationform---View1--page-title-inner,#idDialog-title-inner,#__success0-title-inner{
+    color: white;
+}
+#container-registrationform---View1--toolbar1{
+    background: transparent;
+}
+#container-registrationform---View1--Texport-listUl{
+    background: transparent;
+}
+.sapMIBar,.sapMIBar-CTX,.sapMBar,.sapMContent-CTX,.sapMBar-CTX,.sapMHeader-CTX,.sapMBarTitleAlignAuto.sapMDialogSection {
+    background: white;
+}
+#idDialog{
+    border: 3px solid black;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 12px 12px 12px 12px;
+}
+

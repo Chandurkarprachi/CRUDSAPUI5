@@ -1,0 +1,19 @@
+
+<core:FragmentDefinition 
+    xmlns:core="sap.ui.core" 
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Dialog id="idDialog" title="Add Record">
+         <f:SimpleForm id="_IDGenSimpleForm1">
+            <f:content>
+                <Label id="_IDGenLabel1" text="First Name" design="Bold"/>
+                <Input id="idName" width="200px" liveChange="onFirstName"/>
+                <Label id="_IDGenLabel2" text="Last Name" design="Bold" />
+                <Input id="idLasName"  width="200px" liveChange="onLastName" />
+            </f:content>
+        </f:SimpleForm>      
+        <Button id="btnSave" text="Click Me to save" type="Accept" press="onSave" />
+        <Button id="btnEdit" text="Click Me to Edit" type="Accept" press="onEditSave"/>
+        <Button id="btnCancel" text="Click Me to Cancel" type="Emphasized" press="onCancel"/>    
+    </Dialog>
+</core:FragmentDefinition>
